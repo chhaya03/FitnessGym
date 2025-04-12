@@ -1,0 +1,45 @@
+.callBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 3em 0.5em;
+  background-color: #369669;
+  color: #fff; 
+  text-align: center;
+}
+
+.callBack__title {
+  font-size: 4rem;
+}
+
+.callBack__icon {
+  font-size: 5rem;
+}
+
+.callBack__text {
+  font-size: 3rem;
+}
+
+.callBack__btn {
+  margin-top: 1em;
+  padding: 1em 2em;
+  border-radius: 6px;
+  background-color: #161616; 
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .callBack__btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .callBack__btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}

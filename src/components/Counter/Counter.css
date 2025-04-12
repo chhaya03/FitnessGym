@@ -1,0 +1,51 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  padding: 3em 0;
+  background: url("../../assets/counter.webp") rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
+
+.counter__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter__number {
+  font-size: 7rem;
+  color: #369669; 
+  font-weight: 500;
+}
+
+.counter__text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 778px) {
+  .counter {
+    flex-direction: row;
+    gap: 3em;
+    padding: 8em 0.5em;
+    background-attachment: fixed;
+  }
+
+  .counter__number {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 996px) {
+  .counter {
+    gap: 5em;
+  }
+}

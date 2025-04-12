@@ -1,0 +1,129 @@
+.pricing {
+  padding: 4em 0 8em;
+}
+
+.pricing__title {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0 0.5em;
+}
+
+.pricing__box {
+  position: relative;
+  width: 300px;
+  padding: 2em;
+  background-color: #222222;
+  color: #fff;
+  overflow: hidden;
+}
+
+.pricing__best-offer {
+  position: absolute;
+  background-color: #369669;;
+  top: 10px;
+  right: -70px;
+  width: 200px;
+  text-align: center;
+  padding: 0.4em;
+  font-size: 1.4rem;
+  transform: rotate(35deg);
+}
+
+.pricing__box-title {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.pricing__price {
+  color: #369669;;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.pricing__month {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.pricing__line {
+  height: 1px;
+  margin: 1em 0;
+  border: none;
+  background-color: rgb(59, 59, 59);
+}
+
+.pricing__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.pricing__item:last-of-type {
+  margin-bottom: 2em;
+}
+
+.pricing__icon {
+  font-size: 1.8rem;
+}
+
+.pricing__icon--close {
+  color: red;
+}
+
+.pricing__link {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  width: fit-content;
+  padding: 0.8em 1.8em;
+  background-color: #369669;;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .pricing__link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .pricing__link:hover {
+    background-color: #fff;
+    color: #369669;;
+  }
+
+  .pricing__box {
+    width: 350px;
+    transition: background-color 0.3s ease;
+  }
+
+  .pricing__box:hover {
+    background-color: #1c1c1c;
+  }
+}
+
+@media (min-width: 996px) {
+  .pricing__container {
+    flex-direction: row;
+  }
+
+  .pricing__title {
+    font-size: 6rem;
+  }
+}

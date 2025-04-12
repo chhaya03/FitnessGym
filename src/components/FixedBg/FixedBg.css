@@ -1,0 +1,79 @@
+.fixed {
+  position: relative;
+  height: 60vh;
+  background: url("../../assets/fitnessClass.webp") rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 2em;
+  overflow: hidden;
+}
+
+
+.fixed__content {
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 200px;
+}
+
+.fixed__text {
+  font-style: italic;
+  font-size: 1.6rem;
+  opacity: 0.85;
+ 
+}
+
+.fixed__title {
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 60px;
+ 
+  
+}
+
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .fixed__text {
+    font-size: 2rem;
+  }
+
+  .fixed__title {
+    font-size: 5rem;
+  }
+
+  .fixed__link {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 996px) {
+  .fixed {
+    height: 70vh;
+    background-attachment: fixed;
+  }
+
+  .fixed__secondary {
+    background-attachment: fixed;
+  }
+
+  .fixed__text {
+    font-size: 2.4rem;
+  }
+
+  .fixed__title {
+    font-size: 6rem;
+  }
+
+  .fixed__link {
+    font-size: 2rem;
+  }
+}

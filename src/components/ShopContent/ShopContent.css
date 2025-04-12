@@ -1,0 +1,148 @@
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em 1em;
+	background-color: aliceblue;
+}
+
+.shop__title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-align: center;
+	color: rgb(41, 39, 39);
+}
+
+.shop__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 4em;
+}
+
+.shop__buttons > *,
+.shop__btn,
+.shop__navigate {
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  background-color: #333333; 
+  color: white;
+}
+
+.shop__navigate {
+  margin-top: 4em;
+  background-color: #369669;; 
+  font-size: inherit;
+}
+
+.shop__products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.shop__product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 1.5em;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.185);
+}
+
+.shop__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.3em 0.6em;
+  background-color: #369669;; /* $main */
+  color: white;
+  font-size: 1.4rem;
+}
+
+.shop__img {
+  max-width: 250px;
+  width: 100%;
+  margin-bottom: 1em;
+  object-fit: cover;
+}
+
+.shop__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.shop__name {
+  text-align: center;
+  font-weight: 500;
+}
+
+.shop__price {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.shop__active {
+  background-color: #369669;; /* $main */
+}
+
+@media (min-width: 600px) {
+  .shop__title {
+    font-size: 4rem;
+  }
+
+  .shop__buttons > *,
+  .shop__btn,
+  .shop__navigate {
+    padding: 0.8em 1.6em;
+  }
+}
+
+@media (min-width: 768px) {
+  .shop__title {
+    font-size: 5rem;
+  }
+
+  .shop__buttons {
+    gap: 1em;
+  }
+
+  .shop__buttons > *,
+  .shop__btn,
+  .shop__navigate {
+    transition: background-color 0.3s ease;
+  }
+
+  .shop__buttons > *:hover,
+  .shop__btn:hover {
+    background-color: #369669;; /* $main */
+  }
+
+  .shop__navigate:hover {
+    background-color: #333333; /* $dark */
+  }
+
+  .shop__img {
+    height: 250px;
+    transition: transform 0.3s ease;
+  }
+
+  .shop__product:hover .shop__img {
+    transform: scale(1.03);
+  }
+
+  .shop__name {
+    font-size: 1.8rem;
+  }
+}
