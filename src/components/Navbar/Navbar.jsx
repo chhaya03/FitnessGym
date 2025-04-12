@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import { CartContext } from "../ShopContext/ShopContext";
+import logo from "../../assets/logo1.png";
 
 const Navbar = () => {
   const { totalCartItems } = useContext(CartContext);
@@ -35,7 +36,7 @@ const Navbar = () => {
     <nav className={navBgc ? "navbar navbar__bgc" : "navbar"}>
       <div className="navbar__container container">
         <Link to="/" className="navbar__logo">
-          <p className="navbar__logo-text">FitnessGym</p>
+          <img src={logo} alt="logo" className="logo" />
         </Link>
         <ul
           className={

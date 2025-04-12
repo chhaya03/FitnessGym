@@ -9,7 +9,6 @@ import Team from "../components/Team/Team";
 import FixedBg2 from "../components/FixedBg2/FixedBg2";
 import Pricing from "../components/Pricing/Pricing";
 import CallBack from "../components/CallBack/CallBack";
-import LogoSlider from "../components/LogoSlider/LogoSlider";
 
 const Home = () => {
   return (

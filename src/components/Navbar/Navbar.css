@@ -17,9 +17,11 @@
 }
 
 .navbar__logo {
-  font-size: 2.5rem;
-  color: white;
-  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+}
+
+.logo{
+  height: 80px;
 }
 
 .navbar__links {
