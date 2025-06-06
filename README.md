@@ -1,6 +1,6 @@
 <h1>FitnessGym</h1>
 <h2>Project Description</h2>
-FitnessGym Website is a modern, responsive frontend project built with React, JavaScript, CSS, and SCSS/SASS technologies. This website offers users an engaging platform to explore gym facilities, browse fitness programs, and interact with dynamic features such as class schedules, trainer profiles, and a product shop for supplements.<br>
+FitnessGym Website is a modern, responsive frontend project built with React, JavaScript, CSS technologies. This website offers users an engaging platform to explore gym facilities, browse fitness programs, and interact with dynamic features such as class schedules, trainer profiles, and a product shop for supplements.<br>
 
 The site boasts a sleek design, user-friendly navigation, and seamless performance, delivering an enhanced experience for fitness enthusiasts.
 
